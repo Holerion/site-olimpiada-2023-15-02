@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import "./_hero.scss";
+@import "./_previous.scss";
+@import "./_moveToFuture.scss";
+@import "./_phtograph.scss";
+@import "./_futureFasion.scss";
+@import "./_footer.scss";
+body{
+    width: 100vw;
+    overflow: hidden scroll;
+
+    font-size: 24px;
+
+    background-color: #eee;
+    color: #191919;
+    text-align: center;
+    transition: background-color 5s;
+}
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+blockquote {
+    width: 60%;
+    margin: auto;
+	font-weight: 100;
+	font-size: 2rem;
+	line-height: 1.4;
+	position: relative;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #0c0a00;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+
+
+.dark{
+    background-color: black;
+    color: #eee;
+    & *::after,
+    & *::before
+    {
+        color: #eee;
+    }
+    transition: background-color 2s, color 2s;
+}
+
+
+
+
+
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+.logo {
+
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+   user-select: none;
+}
+
+.description{  
+  padding: 5%;
+}
+.logo b{
+  font: 400 6rem "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}

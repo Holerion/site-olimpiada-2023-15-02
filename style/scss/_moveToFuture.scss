@@ -1,0 +1,51 @@
+.move-to-future{
+    height: 6000px;
+    position: relative;
+}
+.garazsh{
+
+    margin: auto;
+    overflow: hidden;
+    position: sticky;
+    top: -400px;
+    width: 100%;
+}
+.delorian{
+
+    margin-top: 500px;
+    width: 100%;
+    height: 60vw;
+    background-image: url('../image/deeelorian.png');
+    background-size: cover;
+    background-position: 0%;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Digital Display';
+    src: url('../Digital-Display.woff2') format('woff2'),
+        url('../Digital-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.speed{
+    position: sticky;
+    top: 150px;
+    left: 50%;
+    z-index: 10;
+    font-family: 'Digital Display';
+    font-weight: normal;
+    font-style: normal;
+
+    text-shadow: 4px 0px 3px rgba(5, 163, 0, 0.8);
+}

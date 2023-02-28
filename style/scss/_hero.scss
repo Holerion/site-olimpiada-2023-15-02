@@ -1,0 +1,40 @@
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    height: 1000px;
+@include flex(column);
+    background-image: url(../image/5.webp);
+    background-size: cover;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -40px;
+        right: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 255, 0.476),rgba(132, 130, 0, 0.305),rgba(0, 0, 0, 0.676));
+    }
+
+.content{
+    z-index: 10;
+   
+}
+.title{
+    color: #eee;
+    font-size: 4rem;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 1px 15px black,1px 1px 5px black,1px 1px 25px black;
+}
+.text{
+    color: #eee;
+    font-size: 2rem;
+    width: 60%;    
+    margin:auto;
+    text-shadow: 1px 1px 15px black,1px 1px 5px black,1px 1px 25px black;
+}
+}

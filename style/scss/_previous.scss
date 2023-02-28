@@ -1,0 +1,186 @@
+.previous{
+  position: relative;
+padding: 5rem;
+
+}
+.tuda{
+  position: absolute;
+  top: 1500px;
+  right: 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  width: 70%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.galary{    
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+.container {
+  transform-style: preserve-3d;
+  transform: rotatex(-5deg);
+
+}
+
+@keyframes circle {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(0deg);
+  }
+  15% {
+    transform: rotateY(-60deg);
+  }
+  25% {
+    transform: rotateY(-60deg);
+  }
+  30% {
+    transform: rotateY(-120deg);
+  }
+  40% {
+    transform: rotateY(-120deg);
+  }
+  45% {
+    transform: rotateY(-180deg);
+  }
+  55% {
+    transform: rotateY(-180deg);
+  }
+  60% {
+    transform: rotateY(-240deg);
+  }
+  70% {
+    transform: rotateY(-240deg);
+  }
+  75% {
+    transform: rotateY(-300deg);
+  }
+  85% {
+    transform: rotateY(-300deg);
+  }
+  90% {
+    transform: rotateY(-360deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+.text {
+  position: absolute;
+  transform-style: preserve-3d;
+  
+  transform: rotateY(calc(60deg * var(--i)))
+  translatez(500px)
+  translateX(-250px)
+  ;
+  transition: 2s;
+  
+  cursor: pointer;
+ 
+}
+.all {
+    display: inline-block;
+
+    transform-style: preserve-3d;
+  animation: circle 40s infinite linear;
+}
+
+.back {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 550px;
+  height: 680px;
+  transform: translateZ(-1px);
+  position: absolute;
+  right: 5%;
+  left: -5%;
+  top: -5%;
+  box-shadow: 0 0 15px #232323;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back p {
+  transform-style: preserve-3d;
+  font-size: 24px;
+  transform: translateZ(-2px) rotatey(180deg);
+  margin: 5vw;
+}
+
+
+.img {
+    width: 500px;
+    height: 500px;
+  background-position: 10%;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.show {
+  background-color: #00000000;
+  background-position: 100%;
+  transition: 5s;
+}
+
+.img h3 {
+  position: absolute;
+  top: 550px;  
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.image1 {
+  background-image: url(../image/previous/1.webp);
+}
+.image2 {
+  background-image: url(../image/previous/2.webp);
+}
+.image3 {
+  background-image: url(../image/previous/3.webp);
+}
+.image4 {
+  background-image: url(../image/previous/4.webp);
+}
+.image5 {
+  background-image: url(../image/previous/5.webp);
+}
+.image6 {
+  background-image: url(../image/previous/6.webp);
+}
+.image7 {
+  background-image: url(../image/previous/7.webp);
+}
+
+
+.revers {
+  transition: 2s;
+  transform: rotateY(180deg) ;
+}
+}
+
+
+.traktor{
+  margin-top: 500px;
+  animation: drdrdr 50s infinite linear;
+}
+
+@keyframes drdrdr {
+  from{
+      transform: translateX(-5000px);
+  }
+  to{
+      transform: translateX(1500px);
+  }
+}
+
